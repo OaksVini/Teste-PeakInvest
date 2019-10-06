@@ -1,0 +1,20 @@
+<div class="center">
+    <div style="background: red; padding: 5%">
+        <div>
+            <div style="align-items: center; display: flex; justify-content: center;">
+                <p><b>{{getData}}</b></p>
+            </div>
+            <div style="align-items: center; display: flex; justify-content: center;">
+                <input type="number" placeholder="Parcelas" #parcelas />
+            </div>
+        </div>
+        <br>
+        <div>
+            <input type="number" placeholder="Valor das Parcelas" #valor />
+        </div>
+        <br>
+        <div class="centerBtn" style="align-items: center; display: flex; justify-content: center;">
+            <button (click)="Post(valor.value, parcelas.value)">Calcular</button>
+        </div>
+    </div>
+</div>

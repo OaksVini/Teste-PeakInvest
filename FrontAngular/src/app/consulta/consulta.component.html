@@ -1,0 +1,16 @@
+<div class="center">
+    <div style="background: red; padding: 5%">
+        <div>
+            <div style="align-items: center; display: flex; justify-content: center;">
+                <p><b>{{getData}}</b></p>
+            </div>
+            <div style="align-items: center; display: flex; justify-content: center;">
+                <input type="number" placeholder="1 a 3" #box />
+            </div>
+        </div>
+        <br>
+        <div class="centerBtn" style="align-items: center; display: flex; justify-content: center;">
+            <button (click)="Get(box.value)">Buscar</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="toolbar" role="banner" style="display: flex; justify-content: center;">
+    <div (click)="selection.value = 'cadastro'">
+        <span><a routerLink="/cadastro" routerLinkActive="active" style="color:violet">Tela de Cadastro</a></span>
+    </div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <div (click)="selection.value = 'consulta'">
+        <span><a routerLink="/consulta" routerLinkActive="active" style="color:violet">Tela de Consulta</a> &nbsp;</span>
+    </div>
+</div>
+
+
+
+<router-outlet class="router"></router-outlet>
